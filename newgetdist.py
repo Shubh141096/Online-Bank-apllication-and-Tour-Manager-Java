@@ -1,0 +1,1 @@
+import urllibimport sysfrom bs4 import BeautifulSoup #frm = sys.argv[1]#to = sys.argv[2]#print frm,tourl = "https://www.google.co.in/flights/#search;f=DEL;t=DAL;tt=o"soup = BeautifulSoup(SeleniumWebScraper.retrieve_source_code(url))print soup

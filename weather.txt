@@ -1,0 +1,10 @@
+Hello Sir! Today's weather report is as follows:
+Location:  Bangalore / Hindustan
+Current Temperature : 32 C
+Feels Like: 34 CForecast: 22 / 38 CWind: 9 km/h  from East
+Current Time:  16  2016, 12:11:17
+Latest Report:  16  2016, 11.30
+Visibility:  N/A
+Pressure:  1015 mbar (920 mbar at 876m altitude)
+Humidity:  49%
+Dew Point:  20 C

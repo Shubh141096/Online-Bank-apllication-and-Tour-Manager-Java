@@ -1,0 +1,20 @@
+import urllib
+import sys
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+import time
+frm = sys.argv[1]
+to = sys.argv[2]
+#print frm,to
+url = "https://www.google.co.in/flights/#search;f="+frm+";t="+to+";tt=o"
+
+driver = webdriver.Firefox()
+driver.get(url)
+time.sleep(40)
+we = open("price.txt",'w')
+we.write(driver.find_elements(By.XPATH, "id('root')/x:div[3]/x:table/x:tbody/x:tr[2]/x:td/x:table/x:tbody/x:tr/x:td[2]/x:div/x:div/x:div[3]/x:div[1]/x:div/x:div[2]/x:div[2]/x:div[1]/x:div[2]/x:a/x:div[1]/x:div/x:div[1]"))
+print driver.find_elements(By.XPATH, "id('root')/x:div[3]/x:table/x:tbody/x:tr[2]/x:td/x:table/x:tbody/x:tr/x:td[2]/x:div/x:div/x:div[3]/x:div[1]/x:div/x:div[2]/x:div[2]/x:div[1]/x:div[2]/x:a/x:div[1]/x:div/x:div[1]")
+we.close()
+driver.close()
+
